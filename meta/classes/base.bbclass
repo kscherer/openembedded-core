@@ -260,6 +260,7 @@ python base_eventhandler() {
         statusheader = d.getVar('BUILDCFG_HEADER')
         if statusheader:
             bb.plain('\n%s\n%s\n' % (statusheader, '\n'.join(statuslines)))
+            bb.plain('Using Devbuild!\n')
 
     # This code is to silence warnings where the SDK variables overwrite the 
     # target ones and we'd see dulpicate key names overwriting each other
